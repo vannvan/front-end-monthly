@@ -125,6 +125,10 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  aside{
+    max-height: 100vh;
+    overflow: auto;
+  }
 
   @media screen(lg) {
     .root {

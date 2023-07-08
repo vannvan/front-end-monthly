@@ -18,9 +18,9 @@
 <div class="flex flex-col flex-grow">
   <header class="pt-4">
     <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
-      Writing on tech, music, and whatever else I feel like
+      月刊集合
     </h1>
-    <p class="mt-6">All of my written content collected in one place</p>
+    <p class="mt-6">希望你能在这里获得一些灵感和收获</p>
   </header>
 
   <div class="mt-16 sm:mt-20">
