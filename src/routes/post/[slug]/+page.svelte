@@ -52,7 +52,6 @@
   <meta name="twitter:title" content={data.post.title} />
   <meta name="twitter:description" content={data.post.preview.text} />
   <meta name="twitter:image" content={ogImage} />
-  <meta name="referrer" content="no-referrer" />
 </svelte:head>
 
 <div class="root max-w-2xl mx-auto lg:max-w-none">

@@ -1,9 +1,8 @@
 // URL of your website
 export const website = 'https://yuque-tools-blog.vercel.app/'
 
-export const firstName = 'vannvan'
-export const lastName = '的前端月刊'
-export const name = `${firstName} ${lastName}`
+export const author = 'vannvan'
+export const name = `前端月刊`
 
 // Used for the landing page & footer of posts
 export const avatar = 'https://avatars.githubusercontent.com/u/43501134?v=4'
@@ -16,3 +15,5 @@ export const github = 'vannvan/yuque-tools-blog'
 export const twitter = ''
 export const linkedin = ''
 export const instagram = ''
+
+export const rss = 'rss.xml'

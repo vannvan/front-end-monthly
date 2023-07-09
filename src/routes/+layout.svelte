@@ -3,6 +3,7 @@
   import '../prism.css'
   import MoonIcon from 'heroicons-svelte/solid/MoonIcon.svelte'
   import SunIcon from 'heroicons-svelte/solid/SunIcon.svelte'
+  import SocialLinks from '$lib/components/SocialLinks.svelte'
   import { browser } from '$app/environment'
   import { name } from '$lib/info'
   import { page } from '$app/stores'
@@ -17,7 +18,7 @@
   }
 </script>
 
-<div class="flex flex-col min-h-screen ">
+<div class="flex flex-col min-h-screen">
   <div class="flex flex-col flex-grow w-full px-4 py-2">
     <header class="flex items-center justify-between w-full max-w-2xl py-4 mx-auto lg:pb-8">
       <a
@@ -26,8 +27,8 @@
       >
         {name}
       </a>
-
-      <button
+      <div class="flex">
+        <button
         type="button"
         role="switch"
         aria-label="Toggle Dark Mode"
@@ -47,8 +48,10 @@
         }}
       >
         <MoonIcon class="hidden text-zinc-500 dark:block" />
-        <SunIcon class="block text-zinc-400 dark:hidden" />
+        <SunIcon class="block text-zinc-400 dark:hidden" /> 
       </button>
+      </div>
+      
     </header>
     <main
       class="flex flex-col flex-grow w-full mx-auto"
@@ -56,5 +59,9 @@
     >
       <slot />
     </main>
+   
   </div>
+  <footer class="flex w-full mx-auto gap-6 justify-center h-16">
+    <SocialLinks/>
+  </footer>
 </div>

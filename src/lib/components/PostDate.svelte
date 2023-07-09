@@ -7,7 +7,6 @@
 
   let _class
   export { _class as class }
-  console.log('post',post);
 </script>
 
 <div
