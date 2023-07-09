@@ -16,4 +16,4 @@ export const twitter = ''
 export const linkedin = ''
 export const instagram = ''
 
-export const rss = 'rss.xml'
+export const rss = 'https://front-end-monthly.vercel.app/rss.xml'
