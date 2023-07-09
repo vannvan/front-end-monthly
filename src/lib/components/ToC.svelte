@@ -9,8 +9,8 @@
   let headings = post.headings
 
   onMount(() => {
-    updateHeadings()
-    setActiveHeading()
+    // updateHeadings()
+    // setActiveHeading()
   })
 
   let activeHeading = headings[0]
@@ -46,7 +46,8 @@
   }
 </script>
 
-<svelte:window on:scroll={setActiveHeading} />
+<!-- <svelte:window on:scroll={setActiveHeading} /> -->
+<svelte:window  />
 
 <Card>
   <slot slot="description">

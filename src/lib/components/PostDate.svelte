@@ -7,6 +7,7 @@
 
   let _class
   export { _class as class }
+  console.log('post',post);
 </script>
 
 <div
@@ -20,7 +21,7 @@
   {/if}
   <div class="flex" class:flex-col={!collapsed}>
     <time datetime={post.date}>
-      {format(new Date(parseISO(post.date)), 'MMMM d, yyyy')}
+      {format(new Date(parseISO(post.date)), 'yyyy-MM-dd')}
     </time>
     {#if collapsed}
       <span class="mx-1">•</span>

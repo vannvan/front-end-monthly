@@ -8,8 +8,10 @@
 		"check": "svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --check . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write ."
+    "format": "prettier --write .",
+    "sync-yuque": "ts-node-esm -T scripts/sync-yuque-doc-task.ts"
 	},
+  "type": "module",
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.22.1",
@@ -35,14 +37,15 @@
 		"typescript": "^4.9.4",
 		"unist-util-visit": "^3.1.0",
 		"vite": "^4.0.0"
-	},
-	"type": "module",
+  },
 	"dependencies": {
+    "@types/node": "^20.4.1",
 		"clsx": "^1.1.1",
 		"date-fns": "^2.28.0",
 		"heroicons-svelte": "^0.0.1",
 		"node-html-parser": "^5.2.0",
 		"reading-time": "^1.5.0",
-		"reading-time-estimator": "^1.4.33"
+    "reading-time-estimator": "^1.4.33",
+    "ts-node": "^10.9.1"
 	}
 }

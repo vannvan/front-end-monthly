@@ -12,7 +12,7 @@ export const bio = `--`
 // Your social usernames, empty strings won't be used.
 // For sake of the live demo, I'm using `username/repo` for github,
 // but you can replace with just your username.
-export const github = 'mattjennings/sveltekit-blog-template'
+export const github = 'vannvan/yuque-tools-blog'
 export const twitter = ''
 export const linkedin = ''
 export const instagram = ''

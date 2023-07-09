@@ -52,6 +52,7 @@
   <meta name="twitter:title" content={data.post.title} />
   <meta name="twitter:description" content={data.post.preview.text} />
   <meta name="twitter:image" content={ogImage} />
+  <meta name="referrer" content="no-referrer" />
 </svelte:head>
 
 <div class="root max-w-2xl mx-auto lg:max-w-none">
@@ -91,7 +92,7 @@
 
     <!-- bio -->
     <hr />
-    <div class="py-8">
+    <!-- <div class="py-8">
       <div class="grid gap-8">
         <div class="flex justify-center order-1 col-span-2 gap-6 md:order-2">
           <SocialLinks />
@@ -109,12 +110,12 @@
           {bio}
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- table of contents -->
   <div class="hidden xl:block pt-10">
-    <aside class="sticky hidden w-48 ml-8 xl:block top-8" aria-label="Table of Contents">
+    <aside class="sticky hidden w-60 ml-8 xl:block top-8" aria-label="Table of Contents">
       <ToC post={data.post} />
     </aside>
   </div>
@@ -125,10 +126,10 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  aside{
+  /* aside{
     max-height: 100vh;
     overflow: auto;
-  }
+  } */
 
   @media screen(lg) {
     .root {

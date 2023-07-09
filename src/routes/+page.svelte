@@ -26,7 +26,7 @@
         <SocialLinks />
       </div>
       <p class="text-base text-zinc-600 dark:text-zinc-400">
-        {bio}
+        <!-- {bio} -->
       </p>
     </div>
   </section>
